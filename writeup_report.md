@@ -112,7 +112,7 @@ Here is a visualization of the architecture.
 
 To capture good driving behavior, I first recorded three laps on track one using center lane driving. Here is an example image of center lane driving:
 
-![center driving](center_2017_11_02_02_16_56_457.jpg)
+![center driving](center_driving.jpg)
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to recenter itself. These images show what a recovery looks like :
 
