@@ -110,7 +110,7 @@ Here is a visualization of the architecture.
 
 ####3. Creation of the Training Set & Training Process
 
-To capture good driving behavior, I first recorded three laps on track one using center lane driving. Here is an example image of center lane driving:
+To capture good driving behavior, I first recorded three laps on track one using center lane driving and three other laps on the opposite direction. Here is an example image of center lane driving:
 
 ![center driving](images/center_driving.jpg)
 
@@ -118,7 +118,7 @@ I then recorded the vehicle recovering from the left side and right sides of the
 
 ![recovering](images/reovering.gif)
 
-To augment the data set, I also flipped images and angles thinking that this would help reduce the -ve angle bias For example, here is an image that has then been flipped:
+To augment the data set, I also flipped images and angles thinking that this would help to generalize the model For example, here is an image that has then been flipped:
 
 ![original](images/center_2017_10_23_23_12_39_517.jpg)
 ![flipped](images/center_2017_10_23_23_12_39_517_flipped.jpg)
@@ -130,6 +130,6 @@ After the collection process, I had 36006 of data points. I then preprocessed th
 ![cropped](images/center_2017_10_23_23_12_39_517_cropped.jpg)
 
 
-I finally randomly shuffled the data set and put Y% of the data into a validation set. 
+I finally randomly shuffled the data set and put 20% of the data into a validation set. 
 
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 2 as evidenced by monitoring the mse. I used an adam optimizer so that manually training the learning rate wasn't necessary.
