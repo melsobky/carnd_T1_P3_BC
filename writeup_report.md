@@ -43,7 +43,7 @@ The model.py file contains the code for training and saving the convolution neur
 
 My model used Nvidia self driving car network
 
-![alt text](.\cnn-architecture.png)
+![alt text](cnn-architecture.png)
 
 ####2. Attempts to reduce overfitting in the model
 
