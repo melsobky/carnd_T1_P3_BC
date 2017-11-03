@@ -112,22 +112,22 @@ Here is a visualization of the architecture.
 
 To capture good driving behavior, I first recorded three laps on track one using center lane driving. Here is an example image of center lane driving:
 
-![center driving](center_driving.jpg)
+![center driving](images\center_driving.jpg)
 
-I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to recenter itself. These images show what a recovery looks like :
+I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to recenter itself. This image shows what a recovery looks like :
 
-![recovering](reovering.gif)
+![recovering](images\reovering.gif)
 
 To augment the data set, I also flipped images and angles thinking that this would help reduce the -ve angle bias For example, here is an image that has then been flipped:
 
-![original](center_2017_10_23_23_12_39_517.jpg)
-![flipped](center_2017_10_23_23_12_39_517_flipped.jpg)
+![original](images\center_2017_10_23_23_12_39_517.jpg)
+![flipped](images\center_2017_10_23_23_12_39_517_flipped.jpg)
 
 Etc ....
 
 After the collection process, I had 36006 of data points. I then preprocessed this data by cropping the image to remove the sky and car hood.
 
-![cropped](center_2017_10_23_23_12_39_517_cropped.jpg)
+![cropped](images\center_2017_10_23_23_12_39_517_cropped.jpg)
 
 
 I finally randomly shuffled the data set and put Y% of the data into a validation set. 
