@@ -43,7 +43,7 @@ The model.py file contains the code for training and saving the convolution neur
 
 My model used Nvidia self driving car network
 
-![alt text](cnn-architecture.png)
+![alt text](images/cnn-architecture.png)
 
 ####2. Attempts to reduce overfitting in the model
 
@@ -112,22 +112,22 @@ Here is a visualization of the architecture.
 
 To capture good driving behavior, I first recorded three laps on track one using center lane driving. Here is an example image of center lane driving:
 
-![center driving](images\center_driving.jpg)
+![center driving](images/center_driving.jpg)
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to recenter itself. This image shows what a recovery looks like :
 
-![recovering](images\reovering.gif)
+![recovering](images/reovering.gif)
 
 To augment the data set, I also flipped images and angles thinking that this would help reduce the -ve angle bias For example, here is an image that has then been flipped:
 
-![original](images\center_2017_10_23_23_12_39_517.jpg)
-![flipped](images\center_2017_10_23_23_12_39_517_flipped.jpg)
+![original](images/center_2017_10_23_23_12_39_517.jpg)
+![flipped](images/center_2017_10_23_23_12_39_517_flipped.jpg)
 
 Etc ....
 
 After the collection process, I had 36006 of data points. I then preprocessed this data by cropping the image to remove the sky and car hood.
 
-![cropped](images\center_2017_10_23_23_12_39_517_cropped.jpg)
+![cropped](images/center_2017_10_23_23_12_39_517_cropped.jpg)
 
 
 I finally randomly shuffled the data set and put Y% of the data into a validation set. 
